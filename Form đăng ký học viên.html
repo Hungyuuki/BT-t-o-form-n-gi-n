@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đăng ký học viên</title>
+    <h2>Form đăng ký học viên</h2>
+</head>
+<body>
+<form id="ghidanhhv" method="post">
+<table bgcolor="#ffe4c4">
+    <td colspan="3" style="text-align:center;color: blue"  bgcolor="aqua"> ĐĂNG KÝ HỌC VIÊN
+    </td>
+    <tr>
+        <th><label for="username">Họ và tên</label></th>
+        <th colspan="2">
+            <input type="text" id="username" name="username"/>
+        </th>
+    </tr>
+    <tr>
+        <th>Ngày sinh</th>
+        <th colspan="2">
+            <input type="date" id="ngaysinh" name="ngaysinh" min="1">
+        </th>
+    </tr>
+    <tr>
+        <th>Giới tính</th>
+        <th colspan="2">
+            <label for="male">Male </label>
+            <input id="male" name="sex" type="radio" value="male">
+            <label for="female">Female </label>
+            <input id="female" name="sex" type="radio" value="female">
+        </th>
+    </tr>
+    <tr>
+        <th><label for="address">Địa chỉ</label></th>
+        <th colspan="2">
+            <textarea name="" id="address" cols="30" rows="5"></textarea>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <label for="Cla">Lớp</label>
+        </th>
+        <th colspan="2">
+            <select name="chọn" id="Cla">
+            <option value="" selected>Choose Class</option>
+                <option value="Pri">Cap1</option>
+                <option value="Sec">Cap2</option>
+                <option value="Hig">Cap3</option>
+                <option value="Lea">Maugiao</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th><label for="Email">Email</label></th>
+        <th colspan="2">
+            <input type="text" name="mail" id="Email">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <label for="tel">Điện thoại</label>>
+        </th>
+        <th colspan="2">
+            <input type="number" min="0" id="tel">
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th colspan="2"><button><input type="submit" value="Đăng ký"></button>
+        <button> <input type="reset" value="Nhập lại"></button></th>
+    </tr>
+</table>
+</form>
+</body>
+</html>
